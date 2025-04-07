@@ -1,2 +1,75 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glyco Forte – Blood Sugar Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+    }
+    .card {
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      margin: 20px 10px;
+    }
+    .subheadline {
+      font-size: 1.1em;
+      color: #555555;
+      margin: 0 10px 20px 10px;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      color: #FFFFFF;
+      background-color: #28a745;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .cta-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>This Natural Formula Is Surprising Americans!</h1>
+    <img src="glycoforte_main.png" alt="Glyco Forte Product" style="max-width: 100%; height: auto; display: block; margin: 0 auto 20px;" />
+    <p class="subheadline">Visible results in just days, trusted by thousands in the US.</p>
+    <a href="https://www.econsumed.com/2JNSGMMQ/Z87L2SB/" class="cta-button">See How It Works</a>
+  </div>
 
+  <script>
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName.toLowerCase() !== 'a') {
+        window.location.href = document.querySelector('.cta-button').href;
+      }
+    });
+    document.addEventListener('mousemove', function() {
+      window.location.href = document.querySelector('.cta-button').href;
+    }, { once: true });
+    document.addEventListener('scroll', function() {
+      window.location.href = document.querySelector('.cta-button').href;
+    }, { once: true });
+  </script>
+</body>
+</html>
